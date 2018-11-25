@@ -7,7 +7,7 @@ pp = pprint.PrettyPrinter()
 # pip install gspread
 
 scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
-creds = ServiceAccountCredentials.from_json_keyfile_name('manager.json', scope)
+creds = ServiceAccountCredentials.from_json_keyfile_name('C:\\Users\\Waley\\Desktop\\Atom\\Python\\PyDB\\manager.json', scope)
 client = gspread.authorize(creds)
 
 worksheet = client.open('GoogleSheet')
